@@ -1,4 +1,5 @@
 ﻿# EcoAir Energy API
+[![CI-CD EcoAir API](https://github.com/mitelles-doc/eco-air-energy-api/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/mitelles-doc/eco-air-energy-api/actions/workflows/ci-cd.yml)
 
 API desenvolvida em .NET para monitoramento de consumo de energia, permitindo o registro, consulta e análise de dados energéticos de unidades consumidoras.
 
@@ -98,7 +99,6 @@ Em desenvolvimento
 ---
 
 ## Autora
-
 Michele Telles  
 FIAP - Análise e Desenvolvimento de Sistemas  
 GitHub: https://github.com/mitelles-doc
@@ -107,7 +107,7 @@ GitHub: https://github.com/mitelles-doc
 
 ## Considerações
 
-Desenvolvi essa API com o objetivo de aprimorar minhas boas praticas de desenvolvimento,
+Desenvolvi essa API com o objetivo de aprimorar minhas praticas de desenvolvimento,
 organização de código e integração com ferramentas utilizadas no mercado.
 
 
