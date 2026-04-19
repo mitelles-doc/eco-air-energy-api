@@ -1,0 +1,6 @@
+@EcoAir.EnergyApi_HostAddress = http://localhost:5076
+
+GET {{EcoAir.EnergyApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
