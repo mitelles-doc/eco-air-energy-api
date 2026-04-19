@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoAir.EnergyApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e698b0e6da69e9aa15b6825e30e068a7a9995241")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92498647e932cdf7185437c9503106c60ebeb86f")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoAir.EnergyApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoAir.EnergyApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
