@@ -92,6 +92,16 @@ O pipeline é executado automaticamente a cada push na branch main.
 
 ---
 
+## Prints do funcionamento
+
+### Swagger rodando
+
+![Swagger] <img src="https://github.com/user-attachments/assets/c3ecc92a-1e3f-4afb-8012-0162cb8e7424" width="800" />
+
+### Execução de endpoint
+
+![Endpoint] <img src="https://github.com/user-attachments/assets/4092fafa-a32a-475a-bd64-7a9d073a91e5" width="800" />
+
 ## Status do projeto
 
 Em desenvolvimento

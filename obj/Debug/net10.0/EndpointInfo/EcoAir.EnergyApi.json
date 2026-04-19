@@ -1,17 +1,9 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "EcoAir.EnergyApi | v1",
-    "version": "1.0.0"
+    "title": "EcoAir.EnergyApi",
+    "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "https://localhost:7034"
-    },
-    {
-      "url": "http://localhost:5076"
-    }
-  ],
   "paths": {
     "/api/AlertasConsumo": {
       "get": {
@@ -23,11 +15,7 @@
             "name": "pageNumber",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 1
             }
@@ -36,11 +24,7 @@
             "name": "pageSize",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 10
             }
@@ -52,17 +36,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfAlertaConsumo"
+                  "$ref": "#/components/schemas/AlertaConsumoPagedResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfAlertaConsumo"
+                  "$ref": "#/components/schemas/AlertaConsumoPagedResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfAlertaConsumo"
+                  "$ref": "#/components/schemas/AlertaConsumoPagedResult"
                 }
               }
             }
@@ -90,8 +74,7 @@
                 "$ref": "#/components/schemas/AlertaConsumo"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -128,7 +111,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -167,7 +149,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -190,8 +171,7 @@
                 "$ref": "#/components/schemas/AlertaConsumo"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -209,7 +189,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -233,7 +212,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -282,11 +260,7 @@
             "name": "pageNumber",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 1
             }
@@ -295,11 +269,7 @@
             "name": "pageSize",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 10
             }
@@ -311,17 +281,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfLeituraEnergia"
+                  "$ref": "#/components/schemas/LeituraEnergiaPagedResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfLeituraEnergia"
+                  "$ref": "#/components/schemas/LeituraEnergiaPagedResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfLeituraEnergia"
+                  "$ref": "#/components/schemas/LeituraEnergiaPagedResult"
                 }
               }
             }
@@ -349,8 +319,7 @@
                 "$ref": "#/components/schemas/LeituraEnergia"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -387,7 +356,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -426,7 +394,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -449,8 +416,7 @@
                 "$ref": "#/components/schemas/LeituraEnergia"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -468,7 +434,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -492,7 +457,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -541,11 +505,7 @@
             "name": "pageNumber",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 1
             }
@@ -554,11 +514,7 @@
             "name": "pageSize",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 10
             }
@@ -570,17 +526,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfLimiteConsumo"
+                  "$ref": "#/components/schemas/LimiteConsumoPagedResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfLimiteConsumo"
+                  "$ref": "#/components/schemas/LimiteConsumoPagedResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfLimiteConsumo"
+                  "$ref": "#/components/schemas/LimiteConsumoPagedResult"
                 }
               }
             }
@@ -608,8 +564,7 @@
                 "$ref": "#/components/schemas/LimiteConsumo"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -646,7 +601,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -685,7 +639,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -708,8 +661,7 @@
                 "$ref": "#/components/schemas/LimiteConsumo"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -727,7 +679,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -751,7 +702,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -800,11 +750,7 @@
             "name": "pageNumber",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 1
             }
@@ -813,11 +759,7 @@
             "name": "pageSize",
             "in": "query",
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32",
               "default": 10
             }
@@ -829,17 +771,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfUnidadeConsumidora"
+                  "$ref": "#/components/schemas/UnidadeConsumidoraPagedResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfUnidadeConsumidora"
+                  "$ref": "#/components/schemas/UnidadeConsumidoraPagedResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PagedResultOfUnidadeConsumidora"
+                  "$ref": "#/components/schemas/UnidadeConsumidoraPagedResult"
                 }
               }
             }
@@ -867,8 +809,7 @@
                 "$ref": "#/components/schemas/UnidadeConsumidora"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -905,7 +846,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -944,7 +884,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -967,8 +906,7 @@
                 "$ref": "#/components/schemas/UnidadeConsumidora"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -986,7 +924,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -1010,7 +947,6 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": "integer",
               "format": "int32"
             }
@@ -1095,34 +1031,24 @@
         "type": "object",
         "properties": {
           "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "unidadeConsumidoraId": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "leituraEnergiaId": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "tipo": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "mensagem": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "criadoEm": {
             "type": "string",
@@ -1137,25 +1063,48 @@
           "leitura": {
             "$ref": "#/components/schemas/LeituraEnergia"
           }
-        }
+        },
+        "additionalProperties": false
+      },
+      "AlertaConsumoPagedResult": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalItems": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AlertaConsumo"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "LeituraEnergia": {
         "type": "object",
         "properties": {
           "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "unidadeConsumidoraId": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "dataHora": {
@@ -1163,65 +1112,73 @@
             "format": "date-time"
           },
           "consumoKwh": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "custoEstimado": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "fonteEnergia": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "unidade": {
             "$ref": "#/components/schemas/UnidadeConsumidora"
           }
-        }
+        },
+        "additionalProperties": false
+      },
+      "LeituraEnergiaPagedResult": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalItems": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LeituraEnergia"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "LimiteConsumo": {
         "type": "object",
         "properties": {
           "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "unidadeConsumidoraId": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "limiteDiarioKwh": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "null",
-              "number",
-              "string"
-            ],
-            "format": "double"
+            "type": "number",
+            "format": "double",
+            "nullable": true
           },
           "limiteMensalKwh": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "null",
-              "number",
-              "string"
-            ],
-            "format": "double"
+            "type": "number",
+            "format": "double",
+            "nullable": true
           },
           "ativo": {
             "type": "boolean"
@@ -1229,199 +1186,57 @@
           "unidade": {
             "$ref": "#/components/schemas/UnidadeConsumidora"
           }
-        }
+        },
+        "additionalProperties": false
       },
-      "PagedResultOfAlertaConsumo": {
+      "LimiteConsumoPagedResult": {
         "type": "object",
         "properties": {
           "pageNumber": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "pageSize": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "totalItems": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "totalPages": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/AlertaConsumo"
-            }
-          }
-        }
-      },
-      "PagedResultOfLeituraEnergia": {
-        "type": "object",
-        "properties": {
-          "pageNumber": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "pageSize": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "totalItems": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "totalPages": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LeituraEnergia"
-            }
-          }
-        }
-      },
-      "PagedResultOfLimiteConsumo": {
-        "type": "object",
-        "properties": {
-          "pageNumber": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "pageSize": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "totalItems": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "totalPages": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
           },
           "items": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/LimiteConsumo"
-            }
+            },
+            "nullable": true
           }
-        }
-      },
-      "PagedResultOfUnidadeConsumidora": {
-        "type": "object",
-        "properties": {
-          "pageNumber": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "pageSize": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "totalItems": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "totalPages": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UnidadeConsumidora"
-            }
-          }
-        }
+        },
+        "additionalProperties": false
       },
       "UnidadeConsumidora": {
         "type": "object",
         "properties": {
           "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "nome": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "cidade": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "tipo": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ativa": {
             "type": "boolean"
@@ -1430,21 +1245,55 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/LeituraEnergia"
-            }
+            },
+            "nullable": true
           },
           "limites": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/LimiteConsumo"
-            }
+            },
+            "nullable": true
           },
           "alertas": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AlertaConsumo"
-            }
+            },
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
+      },
+      "UnidadeConsumidoraPagedResult": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalItems": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UnidadeConsumidora"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "WeatherForecast": {
         "type": "object",
@@ -1454,28 +1303,20 @@
             "format": "date"
           },
           "temperatureC": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "temperatureF": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
           },
           "summary": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },
