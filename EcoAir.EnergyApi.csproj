@@ -16,4 +16,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\NovaPasta1\" />
+    <Folder Include="Controllers\NovaPasta\" />
+    <Folder Include="NovaPasta\" />
+  </ItemGroup>
+
 </Project>
